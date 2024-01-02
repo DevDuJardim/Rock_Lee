@@ -1,0 +1,111 @@
+@charset "UTF-8";
+
+@font-face{
+    font-family: 'rock';
+    src: url(njnaruto.ttf);
+    font-weight: normal;
+}
+
+:root{
+    --color0: #38C28B;
+    --color1:#468F72;
+    --color2:#16F59C;
+    --color3:hsl(156, 23%, 29%);
+    --color4:#424A47;
+    --fundo:rgba(34, 108, 58, 0.994);
+
+    --fonte-rock:'rock';
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: var(--fundo);
+}
+
+header{
+    background-image: linear-gradient(to bottom, var(--color2),var(--color4));
+    min-height: 150px;
+    padding-top: 20px;
+    text-align: center;
+}
+header > h1{
+    color: #053623;
+    font-family: var(--fonte-rock);
+    margin-bottom: 20px;
+    font-size: 3em;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.455)
+}
+header > p{
+    font-size: 1.5em;
+    text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.267);
+
+}
+nav{
+    background-color: #424A47;
+    padding: 10px;
+    box-shadow:0px 7px 9px rgba(0, 0, 0, 0.45);
+}
+nav > a{
+    color: white;
+    padding: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    transition-duration: .5s;
+}
+nav > a:hover{
+    background-color: #16F59C;
+    color: #05452c;
+}
+main{
+    background-color: aliceblue;
+    min-width: 300px;
+    max-width: 800px;
+    margin: auto;
+    margin-bottom: 30px;
+    padding: 20px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.464);
+}
+main p{
+    margin: 15px 0px;
+    text-align: justify;
+    text-indent: 30px;
+    line-height: 2em;
+    font-size: 1em;
+}
+main h2{
+    color: #16F59C;
+    font-size: 2em;
+    font-family: var(--fonte-rock);
+    background-image: linear-gradient(to right, var(--color1),transparent);
+    padding: 2px 2px;
+}
+main h3{
+    background-image: linear-gradient(to right, var(--color0),transparent);
+    margin-bottom: 10px;
+}
+main img{
+    width: 100%;
+}
+div.video{
+    background-color: #05452c;
+    margin: 0px -20px 30px -20px;
+    padding: 20px;
+    padding-bottom: 56%;
+    position: relative;
+}
+div.video > iframe{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+footer{
+    text-align: center;
+    padding: 5px;
+    color: #38C28B;
+    background-image: linear-gradient(to bottom var(--color4), var(--color1));
+    
+}
