@@ -28,7 +28,8 @@ header{
     background-image: linear-gradient(to bottom, var(--color2),var(--color4));
     min-height: 150px;
     padding-top: 20px;
-    box-shadow: 5px, ;
+    box-shadow: 5px ;
+    text-align: center;
 }
 header > h1{
     color: #053623;
