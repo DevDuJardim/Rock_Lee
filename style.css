@@ -28,14 +28,14 @@ header{
     background-image: linear-gradient(to bottom, var(--color2),var(--color4));
     min-height: 150px;
     padding-top: 20px;
-    text-align: center;
+    box-shadow: 5px, ;
 }
 header > h1{
     color: #053623;
     font-family: var(--fonte-rock);
     margin-bottom: 20px;
     font-size: 3em;
-    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.455)
+    text-shadow: 2px 2px 15px rgba(0, 0, 0, 0.455)
 }
 header > p{
     font-size: 1.5em;
